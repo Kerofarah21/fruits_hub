@@ -99,6 +99,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Start now`
+  String get start_now {
+    return Intl.message(
+      'Start now',
+      name: 'start_now',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
