@@ -38,42 +38,46 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          child: OnBoardingPageView(
-            pageController: pageController,
-          ),
-        ),
-        DotsIndicator(
-          dotsCount: 2,
-          decorator: DotsDecorator(
-            activeColor: AppColors.primaryColor,
-            color: currentPage == 0
-                ? AppColors.primaryColor.withValues(alpha: 0.5)
-                : AppColors.primaryColor,
-          ),
-        ),
-        SizedBox(
-          height: 29,
-        ),
-        Visibility(
-          visible: currentPage == 1,
-          maintainSize: true,
-          maintainAnimation: true,
-          maintainState: true,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
-            child: CustomButton(
-              onPressed: () {},
-              text: S.of(context).start_now,
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .9,
+            child: OnBoardingPageView(
+              pageController: pageController,
             ),
           ),
-        ),
-        SizedBox(
-          height: 43,
-        ),
-      ],
+          DotsIndicator(
+            dotsCount: 2,
+            decorator: DotsDecorator(
+              activeColor: AppColors.primaryColor,
+              color: currentPage == 0
+                  ? AppColors.primaryColor.withValues(alpha: 0.5)
+                  : AppColors.primaryColor,
+            ),
+          ),
+          SizedBox(
+            height: 29,
+          ),
+          Visibility(
+            visible: currentPage == 1,
+            maintainSize: true,
+            maintainAnimation: true,
+            maintainState: true,
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
+              child: CustomButton(
+                onPressed: () {},
+                text: S.of(context).start_now,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 43,
+          ),
+        ],
+      ),
     );
   }
 }
