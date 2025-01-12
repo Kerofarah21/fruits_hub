@@ -10,10 +10,12 @@ class PageViewItem extends StatelessWidget {
     required this.backgroundImage,
     required this.subTitle,
     required this.title,
+    required this.isVisible,
   });
 
   final String image, backgroundImage, subTitle;
   final Text title;
+  final bool isVisible;
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +40,12 @@ class PageViewItem extends StatelessWidget {
                   image,
                 ),
               ),
-              TextButton(
-                onPressed: () {},
-                child: Text(S.of(context).skip),
+              Visibility(
+                visible: isVisible,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(S.of(context).skip),
+                ),
               ),
             ],
           ),
