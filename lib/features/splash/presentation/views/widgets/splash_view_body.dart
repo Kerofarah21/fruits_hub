@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../../core/utils/app_images.dart';
 import '../../../../on-boarding/presentation/views/on_boarding_view.dart';
@@ -27,7 +28,9 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: Intl.getCurrentLocale() == 'ar'
+              ? MainAxisAlignment.end
+              : MainAxisAlignment.start,
           children: [
             SvgPicture.asset(Assets.imagesPlant),
           ],
