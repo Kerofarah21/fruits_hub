@@ -42,7 +42,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
       child: Column(
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height * .9,
+            height: MediaQuery.of(context).size.height * .8,
             child: OnBoardingPageView(
               pageController: pageController,
             ),
