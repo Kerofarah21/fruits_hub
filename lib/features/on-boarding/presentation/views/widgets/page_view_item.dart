@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fruits_hub/core/utils/app_colors.dart';
 
+import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../generated/l10n.dart';
 
 class PageViewItem extends StatelessWidget {
@@ -44,7 +46,14 @@ class PageViewItem extends StatelessWidget {
                 visible: isVisible,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(S.of(context).skip),
+                  child: Text(
+                    S.of(context).skip,
+                    style: AppTextStyles.styleRegular(
+                      context,
+                      AppColors.grayScale400,
+                      13,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -61,12 +70,10 @@ class PageViewItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 37),
           child: Text(
             subTitle,
-            style: TextStyle(
-              color: Color(0xFF4E5556),
-              fontSize: 13,
-              fontFamily: 'Cairo',
-              fontWeight: FontWeight.w600,
-              height: 1.70,
+            style: AppTextStyles.styleSemiBold(
+              context,
+              AppColors.grayScale500,
+              13,
             ),
             textAlign: TextAlign.center,
           ),

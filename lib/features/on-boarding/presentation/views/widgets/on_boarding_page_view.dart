@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_images.dart';
+import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../generated/l10n.dart';
 import 'page_view_item.dart';
 
@@ -27,27 +29,26 @@ class OnBoardingPageView extends StatelessWidget {
               children: [
                 TextSpan(
                   text: S.of(context).title1,
-                  style: TextStyle(
-                    color: Color(0xFF0C0D0D),
-                    fontSize: 23,
-                    fontFamily: 'Cairo',
-                    fontWeight: FontWeight.w700,
+                  style: AppTextStyles.styleBold(
+                    context,
+                    AppColors.grayScale950,
+                    23,
                   ),
                 ),
                 TextSpan(
                   text: 'Fruit',
-                  style: TextStyle(
-                    color: Colors.green,
-                    fontSize: 23,
-                    fontWeight: FontWeight.w700,
+                  style: AppTextStyles.styleBold(
+                    context,
+                    AppColors.primaryColor,
+                    23,
                   ),
                 ),
                 TextSpan(
                   text: 'HUB',
-                  style: TextStyle(
-                    color: Colors.yellow,
-                    fontSize: 23,
-                    fontWeight: FontWeight.w700,
+                  style: AppTextStyles.styleBold(
+                    context,
+                    AppColors.orange500,
+                    23,
                   ),
                 ),
               ],
@@ -62,11 +63,10 @@ class OnBoardingPageView extends StatelessWidget {
           subTitle: S.of(context).subTitle2,
           title: Text(
             S.of(context).title2,
-            style: TextStyle(
-              color: Color(0xFF0C0D0D),
-              fontSize: 23,
-              fontFamily: 'Cairo',
-              fontWeight: FontWeight.w700,
+            style: AppTextStyles.styleBold(
+              context,
+              AppColors.grayScale950,
+              23,
             ),
           ),
         ),
