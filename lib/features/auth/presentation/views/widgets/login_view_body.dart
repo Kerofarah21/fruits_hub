@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_button.dart';
@@ -8,6 +9,7 @@ import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
 import 'have_account.dart';
 import 'or_divider.dart';
+import 'social_login_button.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -72,6 +74,33 @@ class LoginViewBody extends StatelessWidget {
               height: 33,
             ),
             OrDivider(),
+            SizedBox(
+              height: 16,
+            ),
+            SocialLoginButton(
+              label: S.of(context).login_with_google,
+              icon: Assets.imagesGoogle,
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            SocialLoginButton(
+              label: S.of(context).login_with_apple,
+              icon: Assets.imagesApple,
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            SocialLoginButton(
+              label: S.of(context).login_with_facebook,
+              icon: Assets.imagesFacebook,
+              onPressed: () {},
+            ),
+            SizedBox(
+              height: 16,
+            ),
           ],
         ),
       ),

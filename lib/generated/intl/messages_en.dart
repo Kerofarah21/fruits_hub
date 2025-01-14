@@ -30,6 +30,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "login_with_apple":
+            MessageLookupByLibrary.simpleMessage("Login with Apple"),
+        "login_with_facebook":
+            MessageLookupByLibrary.simpleMessage("Login with Facebook"),
+        "login_with_google":
+            MessageLookupByLibrary.simpleMessage("Login with Google"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
