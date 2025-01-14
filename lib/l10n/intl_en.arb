@@ -8,5 +8,8 @@
 
     "login": "Login",
     "email": "Email",
-    "password": "Password"
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "donot_have_account": "Don't have an account? ",
+    "create_account": "Create account"
 }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/constants.dart';
+import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
 
@@ -34,6 +37,55 @@ class LoginViewBody extends StatelessWidget {
                   color: Color(0xFFC9CECF),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Align(
+              alignment: AlignmentDirectional.centerEnd,
+              child: Text(
+                S.of(context).forgot_password,
+                style: AppTextStyles.styleSemiBold(
+                  context,
+                  AppColors.lightPrimaryColor,
+                  13,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 33,
+            ),
+            CustomButton(
+              onPressed: () {},
+              text: S.of(context).login,
+            ),
+            SizedBox(
+              height: 33,
+            ),
+            Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: S.of(context).donot_have_account,
+                    style: AppTextStyles.styleSemiBold(
+                      context,
+                      AppColors.grayScale400,
+                      16,
+                    ),
+                  ),
+                  TextSpan(
+                    text: S.of(context).create_account,
+                    style: AppTextStyles.styleSemiBold(
+                      context,
+                      AppColors.primaryColor,
+                      16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 33,
             ),
           ],
         ),

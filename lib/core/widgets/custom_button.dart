@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
+import '../utils/app_text_styles.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -26,11 +27,10 @@ class CustomButton extends StatelessWidget {
             )),
         child: Text(
           text,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 16,
-            fontFamily: 'Cairo',
-            fontWeight: FontWeight.w700,
+          style: AppTextStyles.styleBold(
+            context,
+            Colors.white,
+            16,
           ),
         ),
       ),

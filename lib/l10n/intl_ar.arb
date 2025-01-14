@@ -8,5 +8,8 @@
 
     "login": "تسجيل دخول",
     "email": "البريد الالكتروني",
-    "password": "كلمة المرور"
+    "password": "كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "donot_have_account": "لا تمتلك حساب؟ ",
+    "create_account": "قم بإنشاء حساب"
 }
