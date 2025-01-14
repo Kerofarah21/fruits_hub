@@ -11,5 +11,6 @@
     "password": "كلمة المرور",
     "forgot_password": "نسيت كلمة المرور؟",
     "donot_have_account": "لا تمتلك حساب؟ ",
-    "create_account": "قم بإنشاء حساب"
+    "create_account": "قم بإنشاء حساب",
+    "or": "أو"
 }

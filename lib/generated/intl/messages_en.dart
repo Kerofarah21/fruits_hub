@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "or": MessageLookupByLibrary.simpleMessage("OR"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start now"),

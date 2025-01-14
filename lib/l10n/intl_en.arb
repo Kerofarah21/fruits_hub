@@ -11,5 +11,6 @@
     "password": "Password",
     "forgot_password": "Forgot password?",
     "donot_have_account": "Don't have an account? ",
-    "create_account": "Create account"
+    "create_account": "Create account",
+    "or": "OR"
 }

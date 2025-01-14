@@ -6,6 +6,8 @@ import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
+import 'have_account.dart';
+import 'or_divider.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -62,31 +64,14 @@ class LoginViewBody extends StatelessWidget {
             SizedBox(
               height: 33,
             ),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: S.of(context).donot_have_account,
-                    style: AppTextStyles.styleSemiBold(
-                      context,
-                      AppColors.grayScale400,
-                      16,
-                    ),
-                  ),
-                  TextSpan(
-                    text: S.of(context).create_account,
-                    style: AppTextStyles.styleSemiBold(
-                      context,
-                      AppColors.primaryColor,
-                      16,
-                    ),
-                  ),
-                ],
-              ),
+            HaveAccount(
+              text1: S.of(context).donot_have_account,
+              text2: S.of(context).create_account,
             ),
             SizedBox(
               height: 33,
             ),
+            OrDivider(),
           ],
         ),
       ),
