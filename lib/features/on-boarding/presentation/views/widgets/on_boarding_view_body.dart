@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/services/shared_preferences_singleton.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_button.dart';
@@ -70,6 +71,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                   const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
               child: CustomButton(
                 onPressed: () {
+                  Prefs.saveData(key: kIsOnBoardingViewSeen, value: true);
                   Navigator.of(context)
                       .pushReplacementNamed(LoginView.routeName);
                 },

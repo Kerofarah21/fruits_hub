@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fruits_hub/core/utils/app_colors.dart';
 
+import '../../../../../core/services/shared_preferences_singleton.dart';
 import '../../../../../core/utils/app_text_styles.dart';
+import '../../../../../core/utils/constants.dart';
 import '../../../../../generated/l10n.dart';
 import '../../../../auth/presentation/views/login_view.dart';
 
@@ -47,6 +49,7 @@ class PageViewItem extends StatelessWidget {
                 visible: isVisible,
                 child: TextButton(
                   onPressed: () {
+                    Prefs.saveData(key: kIsOnBoardingViewSeen, value: true);
                     Navigator.of(context)
                         .pushReplacementNamed(LoginView.routeName);
                   },
