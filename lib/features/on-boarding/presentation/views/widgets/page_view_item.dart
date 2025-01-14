@@ -4,6 +4,7 @@ import 'package:fruits_hub/core/utils/app_colors.dart';
 
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../generated/l10n.dart';
+import '../../../../auth/presentation/views/login_view.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem({
@@ -45,7 +46,10 @@ class PageViewItem extends StatelessWidget {
               Visibility(
                 visible: isVisible,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context)
+                        .pushReplacementNamed(LoginView.routeName);
+                  },
                   child: Text(
                     S.of(context).skip,
                     style: AppTextStyles.styleRegular(

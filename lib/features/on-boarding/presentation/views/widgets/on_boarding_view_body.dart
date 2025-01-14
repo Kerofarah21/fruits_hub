@@ -5,6 +5,7 @@ import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../generated/l10n.dart';
+import '../../../../auth/presentation/views/login_view.dart';
 import 'on_boarding_page_view.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
@@ -68,7 +69,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               padding:
                   const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
               child: CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                      .pushReplacementNamed(LoginView.routeName);
+                },
                 text: S.of(context).start_now,
               ),
             ),
