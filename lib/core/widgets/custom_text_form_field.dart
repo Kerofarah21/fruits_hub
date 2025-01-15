@@ -19,6 +19,7 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: keyboardType,
+      style: AppTextStyles.styleSemiBold(context, AppColors.grayScale950, 13),
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: AppTextStyles.styleBold(context, AppColors.grayScale400, 13),
