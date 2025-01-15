@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_colors.dart';
@@ -8,9 +9,11 @@ class HaveAccount extends StatelessWidget {
     super.key,
     required this.text1,
     required this.text2,
+    required this.onTap,
   });
 
   final String text1, text2;
+  final void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +29,7 @@ class HaveAccount extends StatelessWidget {
             ),
           ),
           TextSpan(
+            recognizer: TapGestureRecognizer()..onTap = onTap,
             text: text2,
             style: AppTextStyles.styleSemiBold(
               context,

@@ -15,5 +15,7 @@
     "or": "أو",
     "login_with_google": "تسجيل بواسطة جوجل",
     "login_with_facebook": "تسجيل بواسطة فيسبوك",
-    "login_with_apple": "تسجيل بواسطة أبل"
+    "login_with_apple": "تسجيل بواسطة أبل",
+
+    "new_account": "حساب جديد"
 }

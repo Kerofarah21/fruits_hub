@@ -7,6 +7,7 @@ import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
+import '../signup_view.dart';
 import 'have_account.dart';
 import 'or_divider.dart';
 import 'social_login_button.dart';
@@ -69,6 +70,9 @@ class LoginViewBody extends StatelessWidget {
             HaveAccount(
               text1: S.of(context).donot_have_account,
               text2: S.of(context).create_account,
+              onTap: () {
+                Navigator.of(context).pushNamed(SignupView.routeName);
+              },
             ),
             SizedBox(
               height: 33,

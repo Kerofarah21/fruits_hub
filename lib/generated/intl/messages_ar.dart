@@ -36,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
         "login_with_google":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
+        "new_account": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "skip": MessageLookupByLibrary.simpleMessage("تخط"),
