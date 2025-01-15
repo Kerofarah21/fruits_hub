@@ -17,5 +17,6 @@
     "login_with_facebook": "Login with Facebook",
     "login_with_apple": "Login with Apple",
     
-    "new_account": "New account"
+    "new_account": "New account",
+    "full_name": "Full name"
 }

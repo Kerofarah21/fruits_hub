@@ -219,6 +219,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Full name`
+  String get full_name {
+    return Intl.message(
+      'Full name',
+      name: 'full_name',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

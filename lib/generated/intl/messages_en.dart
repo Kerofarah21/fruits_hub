@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot password?"),
+        "full_name": MessageLookupByLibrary.simpleMessage("Full name"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "login_with_apple":
             MessageLookupByLibrary.simpleMessage("Login with Apple"),

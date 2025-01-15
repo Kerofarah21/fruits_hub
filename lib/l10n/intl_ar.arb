@@ -17,5 +17,6 @@
     "login_with_facebook": "تسجيل بواسطة فيسبوك",
     "login_with_apple": "تسجيل بواسطة أبل",
 
-    "new_account": "حساب جديد"
+    "new_account": "حساب جديد",
+    "full_name": "الاسم كامل"
 }
