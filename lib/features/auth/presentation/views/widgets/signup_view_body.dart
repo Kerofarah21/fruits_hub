@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/constants.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
+import 'terms_and_conditions.dart';
 
 class SignupViewBody extends StatelessWidget {
   const SignupViewBody({super.key});
@@ -45,6 +46,7 @@ class SignupViewBody extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
+            TermsAndConditions(),
           ],
         ),
       ),

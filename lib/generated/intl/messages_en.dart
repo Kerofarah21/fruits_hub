@@ -46,6 +46,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Discover a unique shopping experience with FruitHUB. Explore our wide range of premium fresh fruits and get the best deals and high quality."),
         "subTitle2": MessageLookupByLibrary.simpleMessage(
             "We bring you the best carefully selected fruits. Check out the details, photos and reviews to make sure you choose the perfect fruit."),
+        "terms1": MessageLookupByLibrary.simpleMessage(
+            "By creating an account, you agree to "),
+        "terms2":
+            MessageLookupByLibrary.simpleMessage("Our Terms and Conditions"),
         "title1": MessageLookupByLibrary.simpleMessage("Welcome to "),
         "title2": MessageLookupByLibrary.simpleMessage("Search and shop")
       };

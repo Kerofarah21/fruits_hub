@@ -229,6 +229,26 @@ class S {
       args: [],
     );
   }
+
+  /// `By creating an account, you agree to `
+  String get terms1 {
+    return Intl.message(
+      'By creating an account, you agree to ',
+      name: 'terms1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Our Terms and Conditions`
+  String get terms2 {
+    return Intl.message(
+      'Our Terms and Conditions',
+      name: 'terms2',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

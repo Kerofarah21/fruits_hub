@@ -18,5 +18,7 @@
     "login_with_apple": "Login with Apple",
     
     "new_account": "New account",
-    "full_name": "Full name"
+    "full_name": "Full name",
+    "terms1": "By creating an account, you agree to ",
+    "terms2": "Our Terms and Conditions"
 }
