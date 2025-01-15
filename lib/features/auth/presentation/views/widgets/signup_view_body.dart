@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/constants.dart';
+import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../generated/l10n.dart';
+import 'have_account.dart';
 import 'terms_and_conditions.dart';
 
 class SignupViewBody extends StatelessWidget {
@@ -47,6 +49,23 @@ class SignupViewBody extends StatelessWidget {
               height: 16,
             ),
             TermsAndConditions(),
+            SizedBox(
+              height: 30,
+            ),
+            CustomButton(
+              onPressed: () {},
+              text: S.of(context).create_new_account,
+            ),
+            SizedBox(
+              height: 26,
+            ),
+            HaveAccount(
+              text1: S.of(context).already_have_account,
+              text2: S.of(context).login,
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),

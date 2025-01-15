@@ -20,5 +20,7 @@
     "new_account": "New account",
     "full_name": "Full name",
     "terms1": "By creating an account, you agree to ",
-    "terms2": "Our Terms and Conditions"
+    "terms2": "Our Terms and Conditions",
+    "create_new_account": "Create new account",
+    "already_have_account": "Already have an account? "
 }
